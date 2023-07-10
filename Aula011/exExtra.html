@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de país</title>
+</head>
+<body>
+    <h1>Identificador de País</h1>
+    <p1>Qual seu país ?</p1>
+    <input type="text" name="pais" id="p">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">RESULTADO</div>
+    <script>
+        function verificar() {
+            var pais = window.document.querySelector('input#p')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Seu país é ${pais}`
+
+        }
+    </script>
+</body>
+</html>
